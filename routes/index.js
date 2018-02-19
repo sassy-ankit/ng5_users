@@ -1,9 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-	res.render('index');
+/* User Registration . */
+router.post('/user/register', function(req, res, next) {
+	res.send('Response from /api/user/registration');
+});
+
+router.post('/user/login', function(req, res, next) {
+	res.send('Response from /api/user/login');
+});
+
+router.post('/user/logout', function(req, res, next) {
+	res.send('Response from /api/user/logout');
 });
 
 module.exports = router;

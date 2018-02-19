@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 // Routes
-app.use('/', index);
+app.use('/api', index);
 
 // Initiating Server
 const port = process.env.PORT || 3000;
